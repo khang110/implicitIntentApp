@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CallPermission">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/product_image"
+        android:src="@drawable/book1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/product_detail"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toBottomOf="@+id/product_image" >
+
+        <TextView
+            android:id="@+id/detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/open_sans_extrabold"
+            android:text="Cần tặng sách cũ cho các bạn có nhu cầu"
+            android:textAllCaps="false"
+            android:textColor="#000"
+            android:textSize="50px"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="20dp" />
+
+        <TextView
+            android:id="@+id/detail_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Sách cũ..."
+
+            android:textAllCaps="false"
+            android:textColor="#000"
+            android:textSize="40px"
+            app:layout_constraintTop_toBottomOf="@id/detail_title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/detail_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="20dp"
+            android:text="Miễn phí"
+            android:fontFamily="@font/open_sans_light"
+            android:textAllCaps="false"
+            android:textColor="#56DF7A"
+            android:textSize="40px"
+            app:layout_constraintTop_toBottomOf="@id/detail_title"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Đ/c: Khu phố 6, phường Linh Trung, quận Thủ Đức, TP HCM"
+            android:fontFamily="@font/open_sans_light"
+            android:textAllCaps="false"
+            android:textColor="#000"
+            android:textSize="40px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/detail_type"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/straight_line"
+            app:layout_constraintTop_toBottomOf="@+id/address"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/user_detail"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintTop_toBottomOf="@id/product_detail" >
+
+        <Button
+            android:id="@+id/user_image"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/circle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="Leo Messi"
+            android:fontFamily="@font/open_sans_extrabold"
+            android:textAllCaps="false"
+            android:textColor="#000"
+            android:textSize="40px"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/user_image"
+            />
+
+        <TextView
+            android:id="@+id/user_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="Cá nhân"
+            android:fontFamily="@font/open_sans_light"
+            android:textAllCaps="false"
+            android:textColor="#000"
+            android:textSize="40px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/user_image"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/straight_line"
+            app:layout_constraintTop_toBottomOf="@+id/user_image"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <TextView
+        android:id="@+id/infor_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Cần tặng sách cũ cho các bạn có nhu cầu, sách còn mới cứng. Nếu bạn cần
+                      liên hệ với tôi.\nCảm ơn bạn đã quan tâm!!"
+        android:fontFamily="@font/open_sans_light"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="50px"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+        <Button
+            android:id="@+id/call_permission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFD9A0"
+            android:text="Gọi điện"
+            android:textColor="#5A5A5A" />
+
+    </LinearLayout>
+</ScrollView>

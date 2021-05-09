@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.implicitintent">
+    <!--  -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!--  -->
+    <!-- Camera -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+<!--    Phone call-->
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Tin đăng tặng"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ImplicitIntent">
+        <activity android:name=".uploadimage"
+            android:parentActivityName=".xacnhanhdiachi"></activity>
+        <activity android:name=".CallPermission"
+            android:parentActivityName=".MainActivity"/>
+        <!-- Map api key -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBfB1xp6IdCx_xyhZP6Dc4vsF37DqVWAiU" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" /> <!--  -->
+        <activity android:name=".xacnhanhdiachi"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

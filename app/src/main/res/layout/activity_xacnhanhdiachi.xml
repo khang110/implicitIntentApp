@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".xacnhanhdiachi">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20px"
+        android:paddingBottom="20px">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Xác nhận địa chỉ"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="60px"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="40px"
+        android:layout_marginRight="40px">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textview_city"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="50px"
+                android:completionThreshold="1"
+                android:hint="Tỉnh/thành phố*" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="40px"
+        android:layout_marginRight="40px">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textview_quanhuyen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40px"
+                android:hint="Quận/huyện*"
+                android:textSize="50px" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="40px"
+        android:layout_marginRight="40px">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phường/xã*">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textview_phuongxa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40px"
+                android:textSize="50px" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="40px"
+        android:layout_marginRight="40px">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textview_vitricuthe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40px"
+                android:hint="Địa chỉ cụ thể*"
+                android:textSize="50px" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/button_layvitri"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0px"
+        android:text="Lấy vị trí hiện tại"
+        android:textSize="50px" />
+        <Button
+            android:id="@+id/button_layvitri_intent"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0px"
+            android:text="Launch Map"
+            android:textSize="50px" />
+
+    <Button
+        android:id="@+id/btnXacNhan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#FFD9A0"
+        android:text="Xác nhận"
+        android:textColor="#5A5A5A" />
+
+</LinearLayout>
